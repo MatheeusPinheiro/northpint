@@ -12,7 +12,22 @@ btn.addEventListener('click', ()=>{
 
 
 
-setInterval(()=>{
-	let btn = document.querySelector('carousel-control-next-icon');
+
+
+let whatsapp = document.querySelector('.icon-whatsapp a i');
+let timeout
+
+whatsapp.addEventListener('mouseover', ()=>{
+	clearTimeout(timeout);
+	setTimeout(() => {
+		document.querySelector('.msg').style.display = 'flex'
+	}, 300);
 	
-}, 500)
+})
+
+whatsapp.addEventListener('mouseout', ()=>{
+	clearTimeout(timeout);
+	setTimeout(() => {
+		document.querySelector('.msg').style.display = 'none'
+	}, 300);
+})
