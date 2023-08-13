@@ -29,5 +29,5 @@ whatsapp.addEventListener('mouseout', ()=>{
 	clearTimeout(timeout);
 	setTimeout(() => {
 		document.querySelector('.msg').style.display = 'none'
-	}, 300);
+	}, 500);
 })

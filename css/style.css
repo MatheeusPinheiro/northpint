@@ -227,7 +227,30 @@ display: none;
     display: none;
 }
 
- 
+
+/*Scroll da tela */
+
+/* Estilização da barra de rolagem */
+/* Largura e cor do fundo da trilha */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Cor do "polegar" (parte que pode ser arrastada) */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(209, 6, 6, 0.763));
+    border-radius: 6px;
+  }
+  
+  /* Cor do "polegar" quando o mouse está sobre ele */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+  }
+  */
 
 
 
